@@ -4,7 +4,7 @@ const Home = () => {
     return (
     
         <div>
-            <h1> Tu peux sortir le linge </h1>
+            <h1> Chez vous, partout et ailleurs </h1>
         </div>
         
        
