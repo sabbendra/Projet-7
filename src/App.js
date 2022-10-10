@@ -21,6 +21,7 @@ function App() {
         <Route path='/error' element = {<Error />} />
         <Route path='/about' element = {<About />} />
         <Route path='*' element = {<Error />} />
+
       </Routes>
 
       <Footer/>

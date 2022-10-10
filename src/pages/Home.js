@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Banner from "../components/Banner.js";
 
-const Home = () => {
-    return (
-    
-        <div>
-            <h1> Chez vous, partout et ailleurs </h1>
-        </div>
-        
-       
-    );
+export class Home extends Component {
+    render () {
+
+        return (
+            <>
+             <Banner page = "home" />
+            </>
+        );
+    }
+
 };
 
 export default Home;
