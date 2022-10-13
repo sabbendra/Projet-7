@@ -15,6 +15,7 @@ function App() {
     <BrowserRouter>
 
     <Header/>
+    
       <Routes>
         <Route index element = {<Home />} />
         <Route path='/residence/:id' element = {<Residence />} />

@@ -41,8 +41,14 @@
   }
 }
 
+@media only screen and (max-width: 470px) {
+  .texteBanner {
+    font-size: 20px;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   .texteBanner {
-    font-size: 19px;
+    font-size: 14px;
   }
 }
