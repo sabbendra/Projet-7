@@ -4,7 +4,7 @@
 
 .cardContainer {
   border-radius: 25px;
-  margin: 4rem 2rem;
+  margin-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,7 +66,19 @@ a {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 992px) {
+  .cardItem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .residenceLink {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .cardContainer {
     background: white;
   }
@@ -78,12 +90,5 @@ a {
 
   .residenceLink {
     width: 340px;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .residenceLink {
-    width: 280px;
-    height: 250px;
   }
 }

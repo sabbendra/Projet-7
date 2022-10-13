@@ -15,7 +15,7 @@
 .imgbanner {
   background: black;
   object-fit: cover;
-  width: 90%;
+  width: 95%;
   height: 225px;
   left: 100px;
   border-radius: 25px;
@@ -38,26 +38,14 @@
   }
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 768px) {
   .texteBanner {
-    font-size: 32px;
+    width: 80%;
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 445px) {
   .texteBanner {
-    font-size: 28px;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .texteBanner {
-    font-size: 22px;
-  }
-}
-
-@media only screen and (max-width: 380px) {
-  .texteBanner {
-    font-size: 18px;
+    font-size: 25px;
   }
 }

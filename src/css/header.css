@@ -60,7 +60,7 @@ a:hover {
 
 @media only screen and (max-width: 400px) {
   .headercontainer {
-    padding: 20px;
+    padding: 20px 0;
   }
 
   .img {
