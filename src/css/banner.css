@@ -7,8 +7,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 25px;
-  padding-left: 50px;
-  padding-right: 50px;
+
   height: 225px;
   margin: 0 auto;
 }
@@ -16,7 +15,7 @@
 .imgbanner {
   background: black;
   object-fit: cover;
-  width: 100%;
+  width: 90%;
   height: 225px;
   left: 100px;
   border-radius: 25px;
@@ -33,26 +32,32 @@
   font-weight: 500;
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 880px) {
   .texteBanner {
     font-size: 38px;
   }
 }
 
+@media only screen and (max-width: 680px) {
+  .texteBanner {
+    font-size: 32px;
+  }
+}
+
 @media only screen and (max-width: 550px) {
   .texteBanner {
-    font-size: 25px;
+    font-size: 28px;
   }
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 450px) {
   .texteBanner {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 380px) {
   .texteBanner {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
