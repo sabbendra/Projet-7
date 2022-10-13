@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .headercontainer {
   display: flex;
   justify-content: space-between;
