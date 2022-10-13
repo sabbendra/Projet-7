@@ -18,9 +18,12 @@ function App() {
     
       <Routes>
         <Route index element = {<Home />} />
-        <Route path='/residence/:id' element = {<Residence />} />
-        <Route path='/error' element = {<Error />} />
-        <Route path='/about' element = {<About />} />
+        //c'est un chemin dynamique
+        <Route path='/Residence/:id' element = {<Residence />} />
+        //Quand je créé le chemin pour aller a error et je montre les éléments de la page Error
+        //c'est un chemin absolu
+        <Route path='/Error' element = {<Error />} />
+        <Route path='/About' element = {<About />} />
         <Route path='*' element = {<Error />} />
 
       </Routes>

@@ -1,11 +1,19 @@
 import React from 'react';
+import Banner from "../components/Banner.js";
 
 const About = () => {
     return (
         <div>
-            <h1>A propos</h1>
+             <div>
+                <Banner page = "About" />
+            </div>
         </div>
     );
 };
 
 export default About;
+
+
+
+
+

@@ -16,7 +16,7 @@ class Banner extends Component {
         ) : (
 
             <div className ="banner">
-                <img src = {bannerAbout} alt = "photo de la bannière"/>
+                <img className = "imgbanner" src = {bannerAbout} alt = "photo de la bannière"/>
             </div> 
 
         );

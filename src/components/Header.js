@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../images/logored.png";
 import "../css/header.css";
 
-function Footer() {
+function Header() {
 
     return ( 
         <div className ="headercontainer">
@@ -14,11 +14,11 @@ function Footer() {
             <nav>
                 <ul className = "nav-menu">
                     <li className = "nav-item">
-                        <Link to='/' className = "nav-link"> Accueil </Link>
+                        <Link to="/" className = "nav-link"> Accueil </Link>
                     </li>
 
                     <li className = "nav-item">
-                        <Link to='/' className = "nav-link"> A propos </Link>
+                        <Link to="/About" className = "nav-link"> A propos </Link>
                     </li>
                 </ul>
             </nav>
@@ -27,4 +27,4 @@ function Footer() {
     );
     }
 
-export default Footer;
+export default Header;

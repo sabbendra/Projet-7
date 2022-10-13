@@ -8,9 +8,8 @@ export class Home extends Component {
 
         return (
             <div>
-             <Banner page = "home" />
-            
-            <Cards />
+                <Banner page = "home" />
+                <Cards />
             </div>
         );
     }
