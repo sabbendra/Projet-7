@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+.footercontainer {
+  margin-top: 50px;
+}
+
 .logo-white {
   background: black;
   display: flex;
