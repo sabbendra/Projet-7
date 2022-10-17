@@ -3,6 +3,8 @@
 }
 
 .headercontainer {
+  width: 90%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,7 +29,7 @@ a {
   list-style: none;
 }
 
-a:hover {
+.nav-link:hover {
   border-bottom: 2px solid #ff6060;
 }
 

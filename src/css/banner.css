@@ -3,6 +3,8 @@
 }
 
 .banner {
+  width: 90%;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;

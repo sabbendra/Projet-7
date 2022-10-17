@@ -1,0 +1,42 @@
+.collapseAbout {
+  width: 70%;
+  margin: auto;
+}
+
+.collapseTitle {
+  margin-top: 5%;
+}
+.collapseTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  text-decoration: none;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #ff6060;
+  color: white;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.collapseContent {
+  width: 95%;
+  margin: auto;
+  margin-top: 2%;
+  color: #ff6060;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.collapseTitle :hover,
+.active .collapseTitle {
+  cursor: pointer;
+}
