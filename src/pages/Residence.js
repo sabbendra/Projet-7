@@ -1,9 +1,17 @@
 import React from 'react';
+import {useParams} from 'react-router-dom';
+import Slider from "../components/Slider.js";
+import Logement from "../logements.json";
 
-const Residence = () => {
+function Residence () {
+    const { id } = useParams();
+    const ResidenceId = Logement.find ((item) => item.id === id);
+
     return (
         <div>
-            <h1>Logements</h1>
+            <Slider pictures={ ResidenceId.pictures }/>
+            
+
         </div>
     );
 };
