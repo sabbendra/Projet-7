@@ -31,3 +31,33 @@
   color: white;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 992px) {
+  .left {
+    left: 8rem;
+  }
+
+  .right {
+    right: 8rem;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .left {
+    left: 6rem;
+  }
+
+  .right {
+    right: 6rem;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .left {
+    left: 4rem;
+  }
+
+  .right {
+    right: 4rem;
+  }
+}

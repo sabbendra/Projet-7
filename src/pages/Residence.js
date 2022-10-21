@@ -1,7 +1,10 @@
 import React from 'react';
 import {useParams} from 'react-router-dom';
+import ResidenceDetails from '../components/ResidenceDetails.js';
+import CollapseResidence from "../components/CollapseResidence";
 import Slider from "../components/Slider.js";
 import Logement from "../logements.json";
+import "../css/collapseResidence.css";
 
 function Residence () {
     const { id } = useParams();
@@ -10,8 +13,20 @@ function Residence () {
     return (
         <div>
             <Slider pictures={ ResidenceId.pictures }/>
-            
 
+            <ResidenceDetails/>
+
+            <div className="container-title-DescriptifResidence">
+
+            <div className="title-DescriptifResidence">
+            <CollapseResidence title="Description" content={ResidenceId.description}/>
+            </div>
+
+            <div className="title-DescriptifResidence">
+            <CollapseResidence className="listEquipements" title="Equipements"  content={ResidenceId.equipments}/>
+            </div>
+            
+            </div>
         </div>
     );
 };

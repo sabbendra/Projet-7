@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
-import "../css/collapse.css";
+import "../css/collapseResidence.css";
 
-function Collapse({ title, content }) {
+function CollapseResidence({ title, content }) {
 
     const [Open, setOpen] = useState(false); //l'accordéon est fermé au chargement de la page de base
     const toggle = () => {
@@ -13,7 +13,7 @@ function Collapse({ title, content }) {
     }
 
     return ( 
-        <div className ="collapseAbout">
+        <div className ="collapseResidenceDetail">
             <div className ="collapseItem">
  {/* si open est false donc fermé, alors on execuute */}
                 {!Open ?
@@ -47,5 +47,4 @@ function Collapse({ title, content }) {
     );
     }
 
-export default Collapse;
-
+export default CollapseResidence;
