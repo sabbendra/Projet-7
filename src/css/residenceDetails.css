@@ -67,8 +67,13 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.stars {
+.stars,
+.red-stars {
   color: #ff6060;
+}
+
+.grey-stars {
+  color: #646464;
 }
 
 .hostRating {
