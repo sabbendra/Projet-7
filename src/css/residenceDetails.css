@@ -46,10 +46,6 @@
   flex-direction: column;
 }
 
-.stars {
-  background-color: red;
-}
-
 .host {
   display: flex;
   justify-content: center;
@@ -69,6 +65,10 @@
   font-size: 18px;
   color: #ff6060;
   font-family: "Montserrat", sans-serif;
+}
+
+.stars {
+  color: #ff6060;
 }
 
 .hostRating {

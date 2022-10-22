@@ -6,11 +6,7 @@ import "../css/residenceDetails.css";
 function ResidenceDetails () {
     const { id } = useParams();
     const residence = Logement.find ((item) => item.id === id);
-    const starColor = {
-        red: "#ff6060",
-        grey: "#E3E3E3",
-      };
-
+    
 const stars = Array(5).fill(0);
 
 return (
@@ -21,7 +17,7 @@ return (
             <span className="location">{residence.location}</span>
 
         <div className='residenceTags'>
-            {residence.tags.map((tag) => (
+             {residence.tags.map((tag) => (
                 <div className='tag' key={tag}>
                     {tag}
                 </div>
@@ -36,21 +32,18 @@ return (
         </div>
 
       <div className="rating">
-
         <div className="stars">
-          {stars.map((_, index) => (
-             < fa-solid fa-star-sharp
-             key={index}
-    
-              color={residence.rating > index ? starColor.red : starColor.grey}
-            />
-          ))}
+        {stars.map((index) => (
+          <i className="fa-sharp fa-solid fa-star"
+            key ={index}
+          />
+        ))}
+        
         </div>
       </div>
     </div>
   </div>
 );
 };
-
 
 export default ResidenceDetails

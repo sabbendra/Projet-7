@@ -17,7 +17,7 @@ function App() {
     <Header/>
     
       <Routes>
-        <Route index element = {<Home />} />
+         <Route index element = {<Home />} /> 
         {/* c'est un chemin dynamique */}
         <Route path='/Residence/:id' element = {<Residence />} />
         {/* Quand je créé le chemin pour aller a error et je montre les éléments de la page Error */}

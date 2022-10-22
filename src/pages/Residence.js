@@ -8,7 +8,7 @@ import "../css/collapseResidence.css";
 
 function Residence () {
     const { id } = useParams();
-    const ResidenceId = Logement.find ((item) => item.id === id);
+    const ResidenceId = Logement.find((item) => item.id === id);
 
     return (
         <div>
@@ -17,13 +17,14 @@ function Residence () {
             <ResidenceDetails/>
 
             <div className="container-title-DescriptifResidence">
-
             <div className="title-DescriptifResidence">
+                
             <CollapseResidence title="Description" content={ResidenceId.description}/>
             </div>
 
             <div className="title-DescriptifResidence">
             <CollapseResidence className="listEquipements" title="Equipements"  content={ResidenceId.equipments}/>
+            
             </div>
             
             </div>
