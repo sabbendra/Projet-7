@@ -46,7 +46,7 @@ return (
         <img className='hostProfil' alt='house' src={residence.host.picture} />
         </div>
 
-      <div className="rating">
+      <div className="ratingStars">
 
       {starsArray.map((star, index) => { //Et on map le tableau des étoiles pleines, pour chaque élément 'red' du tableau (qu'on peu remplacer par camion, je rappelle que c'est juste un nom), on crée une balise <i> qui a comme key l'index de chaque élément du tableau, tu noteras que l'argument 'star' n'est pas utilisé, mais il faut donné un premier argument pour pouvoir en donner un 2e, car le 2e argument correspond automatiquement à l'index du tableau, utile pour avoir une key unique
               return <i className="fa-solid fa-star red-stars" key={index}></i>;
