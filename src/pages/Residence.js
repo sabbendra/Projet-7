@@ -5,6 +5,7 @@ import CollapseResidence from "../components/CollapseResidence";
 import Slider from "../components/Slider.js";
 import Logement from "../logements.json";
 import "../css/collapseResidence.css";
+import CollapseDescriptionResidence from '../components/CollapseDescriptionResidence.js';
 
 function Residence () {
     const { id } = useParams();
@@ -17,14 +18,13 @@ function Residence () {
             <ResidenceDetails/>
 
             <div className="container-title-DescriptifResidence">
-            <div className="title-DescriptifResidence">
-                
-            <CollapseResidence title="Description" content={ResidenceId.description}/>
+
+            <div className="title-DescriptifResidence">    
+            <CollapseDescriptionResidence title="Description" content = {ResidenceId.description}/> 
             </div>
 
             <div className="title-DescriptifResidence">
             <CollapseResidence className="listEquipements" title="Equipements"  content={ResidenceId.equipments}/>
-            
             </div>
             
             </div>

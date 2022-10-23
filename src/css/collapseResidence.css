@@ -5,7 +5,8 @@
   margin: 2rem 2rem;
 }
 
-.title-DescriptifResidence {
+.title-DescriptifResidence,
+.CollapseDescriptionResidence {
   width: 50%;
   margin-left: 2rem;
   margin-right: 2rem;
