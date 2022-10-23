@@ -122,3 +122,34 @@
     margin-top: 0;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .residenceTitle,
+  .location {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .residenceTags {
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    justify-content: space-between;
+  }
+
+  .host {
+    gap: 0;
+  }
+}
