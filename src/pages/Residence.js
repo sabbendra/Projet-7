@@ -6,10 +6,13 @@ import Slider from "../components/Slider.js";
 import Logement from "../logements.json";
 import "../css/collapseResidence.css";
 import CollapseDescriptionResidence from '../components/CollapseDescriptionResidence.js';
+import Error from '../components/Error.js';
 
 function Residence () {
     const { id } = useParams();
-    const ResidenceId = Logement.find((item) => item.id === id);
+    const ResidenceId = Logement.find((item) => item.id === id); 
+
+    if (!ResidenceId) return <Error/>;
 
     return (
         <div>
