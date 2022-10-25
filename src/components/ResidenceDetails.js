@@ -12,17 +12,17 @@ const starsArray = []; //on initialise un tableau vide pour les étoiles rouges
 const greyStarsArray = []; //on initialise un tableau vide pour les étoiles grises
 const rating = residence.rating; //on récupère le nb d'étoile du json
 const greyStar = 5 - rating; //le nb d'étoile vide est de 5 moins le nb d'étoile du json
-console.log("grey", greyStar); //on vérifie que le nb d'étoile vide est correcte
+
 
 for (let i = 0; i < rating; i++) {
   starsArray.push("red"); //on push la valeur 'red' (c'est juste une string) dans le tableau starsArray, on le push Z fois, Z étant la valeur de rating
 }
-console.log("star", starsArray); //on vérifie le contenu du tableau qui doit être Z fois red, par exemple pour 3 étoiles (en json) ça donnerait : [red, red, red]
+
 
 for (let i = 0; i < greyStar; i++) {
-  greyStarsArray.push("grey"); //on push la valeur 'grey' (pareil, c'est juste une string, tu peux marquer 'camion' ça fonctionnera aussi ;p) dans le tableau greyStarsArray, on le push Z fois, Z étant la valeur de greyStars (5 - rating)
+  greyStarsArray.push("grey"); //on push la valeur 'grey' dans le tableau greyStarsArray, on le push Z fois, Z étant la valeur de greyStars (5 - rating)
 }
-console.log("greystar", greyStarsArray); //on vérifie le contenue du tableau, par ex si rating = 3, le tableau grey star doit contenir [grey, grey].
+
 
 return (
   <div className="residenceContainer">
