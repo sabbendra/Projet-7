@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Banner from "../components/Banner.js";
 import Cards from '../components/Cards.js';
 
