@@ -25,7 +25,7 @@ function CollapseResidence({ title, content }) {
                 
                 </div>  
                     <ul className="collapseContent">
-                    
+                           {/* content={ResidenceId.equipments} dans Residence.js */}
                          {Open && content.map((equipement, index) =>
   
                         <li key={index}>{equipement}</li>

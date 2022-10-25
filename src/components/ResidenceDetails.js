@@ -48,10 +48,10 @@ return (
 
       <div className="ratingStars">
 
-      {starsArray.map((star, index) => { //Et on map le tableau des étoiles pleines, pour chaque élément 'red' du tableau (qu'on peu remplacer par camion, je rappelle que c'est juste un nom), on crée une balise <i> qui a comme key l'index de chaque élément du tableau, tu noteras que l'argument 'star' n'est pas utilisé, mais il faut donné un premier argument pour pouvoir en donner un 2e, car le 2e argument correspond automatiquement à l'index du tableau, utile pour avoir une key unique
+      {starsArray.map((star, index) => { //Et on map le tableau des étoiles pleines, pour chaque élément 'red' du tableau, on crée une balise <i> qui a comme key l'index de chaque élément du tableau, le 2e argument correspond automatiquement à l'index du tableau, utile pour avoir une key unique
               return <i className="fa-solid fa-star red-stars" key={index}></i>;
             })}
-            {greyStarsArray.map((star, index) => { //pareil que plus haut sauf qu'on map les étoiles vides
+            {greyStarsArray.map((star, index) => { //on map les étoiles vides
               return <i className="fa-solid fa-star grey-stars" key={index}></i>;
             })}
         
