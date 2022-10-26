@@ -13,7 +13,7 @@ const greyStarsArray = []; //on initialise un tableau vide pour les étoiles gri
 const rating = residence.rating; //on récupère le nb d'étoile du json
 const greyStar = 5 - rating; //le nb d'étoile vide est de 5 moins le nb d'étoile du json
 
-
+//tant que i est inf à rating on icrémente i
 for (let i = 0; i < rating; i++) {
   starsArray.push("red"); //on push la valeur 'red' (c'est juste une string) dans le tableau starsArray, on le push Z fois, Z étant la valeur de rating
 }
