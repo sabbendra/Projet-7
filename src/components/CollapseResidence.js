@@ -6,7 +6,7 @@ function CollapseResidence({ title, content }) {
 
     const [Open, setOpen] = useState(false); //l'accordéon est fermé au chargement de la page de base
     const toggle = () => {
-        setOpen(isOpen => !isOpen);
+        setOpen(Open => !Open);
     }
    
     return ( 
